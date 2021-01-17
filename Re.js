@@ -6,16 +6,16 @@ class Re{
       name:'RegularExpression',
       blocks:[
         {opcode:'match',blockType:BlockType.BOOLEAN,text:'/[Re]/が[St]にマッチする',
-          arguments:{Re:{type:ArgumentType.STRING,defaultValue:"^ap+l"}
+          arguments:{Re:{type:ArgumentType.STRING,defaultValue:"^ap+l"},
                      St:{type:ArgumentType.STRING,defaultValue:"hello"}
           }},
         {opcode:'search',blockType:BlockType.REPORTER,text:'[St]中の/[Re]/の場所',
-          arguments:{Re:{type:ArgumentType.STRING,defaultValue:"p+"}
+          arguments:{Re:{type:ArgumentType.STRING,defaultValue:"p+"},
                      St:{type:ArgumentType.STRING,defaultValue:"hello"}
           }},
         {opcode:'replace',blockType:BlockType.REPORTER,text:'[St]の/[Re]/を[St2]で置き換える',
-          arguments:{Re:{type:ArgumentType.STRING,defaultValue:"^ap+l"}
-                     St1:{type:ArgumentType.STRING,defaultValue:"hello"}
+          arguments:{Re:{type:ArgumentType.STRING,defaultValue:"^ap+l"},
+                     St1:{type:ArgumentType.STRING,defaultValue:"hello"},
                      St2:{type:ArgumentType.STRING,defaultValue:" ho"}
           }},
       ]
