@@ -1,16 +1,16 @@
-class Test {
-  constructor() {}
-  getInfo() {
-    return {
-      id: 'test',
-      name: 'Test',
-      blocks: [
-        {opcode: 'hello',blockType: Scratch.BlockType.COMMAND,text: 'hello'}
+class Test{
+  constructor(){}
+  getInfo(){
+    return{
+      id:'test',
+      name:'Test',
+      blocks:[
+        {opcode:'ua',blockType:Scratch.BlockType.REPORTER,text:'ユーザーエージェント'}
       ]
     }
   }
-  hello() {
-    console.log('hello')
+  ua(){
+    return navigator.userAgent
   }
 }
 Scratch.extensions.register(new Test())
