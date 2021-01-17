@@ -1,4 +1,4 @@
-class re{
+class Re{
   constructor(){}
   getInfo(){
     return{
@@ -31,4 +31,4 @@ class re{
     return args.St.replace(RegExp(args.Re,'g'),args.St2)
   }
 }
-Scratch.extensions.register(new re())
+Scratch.extensions.register(new Re())
