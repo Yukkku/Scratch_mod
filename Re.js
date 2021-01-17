@@ -5,15 +5,15 @@ class Re{
       id:'re',
       name:'RegularExpression',
       blocks:[
-        {opcode:'match',blockType:BlockType.BOOLEAN,text:'/[Re]/が[St]にマッチする',
+        {opcode:'match',blockType:Scratch.BlockType.BOOLEAN,text:'/[Re]/が[St]にマッチする',
           arguments:{Re:{type:ArgumentType.STRING,defaultValue:"^ap+l"},
                      St:{type:ArgumentType.STRING,defaultValue:"hello"}
           }},
-        {opcode:'search',blockType:BlockType.REPORTER,text:'[St]中の/[Re]/の場所',
+        {opcode:'search',blockType:Scratch.BlockType.REPORTER,text:'[St]中の/[Re]/の場所',
           arguments:{Re:{type:ArgumentType.STRING,defaultValue:"p+"},
                      St:{type:ArgumentType.STRING,defaultValue:"hello"}
           }},
-        {opcode:'replace',blockType:BlockType.REPORTER,text:'[St]の/[Re]/を[St2]で置き換える',
+        {opcode:'replace',blockType:Scratch.BlockType.REPORTER,text:'[St]の/[Re]/を[St2]で置き換える',
           arguments:{Re:{type:ArgumentType.STRING,defaultValue:"^ap+l"},
                      St1:{type:ArgumentType.STRING,defaultValue:"hello"},
                      St2:{type:ArgumentType.STRING,defaultValue:" ho"}
